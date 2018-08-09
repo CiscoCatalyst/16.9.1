@@ -1,17 +1,25 @@
 # 16.9.1
-Network Automation with Python Code Samples for 16.9.1 features 
+Network Automation with Python Code Samples for 16.9.1 features
 
 A collection of Python Code Samples for Network Management. Includes samples that leverage on-box libraries, as well as samples that use exposed external APIs (NETCONF/RESTCONF).
 
-```
 #### Script: auto_avb.py
-Python script automating the deployemt of 802.1BA AVB (Audio Video Bridging) networks 
-```
+Python script automating the deployemt of 802.1BA AVB (Audio Video Bridging) networks
 
 #### Usage
-python auto_avb.py <path/to/inventory/xl> \<username\> \<password\> mvrp_enable|mvrp_enable
+```
+python auto_avb.py <path/to/inventory/xl> <username> <password> mvrp_enable|mvrp_enable
+```
 
 #### Examples 
+To deploy AVB where endpoints use MVRP:
+```
 python auto_avb_multi_simple.py /home/tmeteam/sidkrish/testxl.xlsx admin password mvrp_enable
+```
+To deploy AVB where endpoints do not use MVRP:
+```
+python auto_avb_multi_simple.py /home/tmeteam/sidkrish/testxl.xlsx admin password mvrp_disable
+```
 
 #### Notes
+
